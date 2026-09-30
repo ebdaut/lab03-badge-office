@@ -15,3 +15,10 @@ System.Console.WriteLine($"Username: {firstName.Substring(0,1).ToLower()}{lastNa
 System.Console.WriteLine($"Initials: {firstName.Substring(0,1).ToUpper()}.{lastName.Substring(0,1).ToUpper()}.");
 System.Console.WriteLine($"Letters in last name: {lastName.Length}");
 
+// part 2 - the numbers
+
+int studentID = rng.Next(100000, 1000000);
+int lockerNumber = rng.Next(1, 501);
+
+System.Console.WriteLine($"StudentID: {studentID}");
+System.Console.WriteLine($"Locker: {lockerNumber}");
