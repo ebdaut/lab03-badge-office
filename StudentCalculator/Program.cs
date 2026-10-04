@@ -1,5 +1,7 @@
 ﻿// top variable(s) used throughout the code
 
+using Microsoft.VisualBasic;
+
 Random rng = new Random();
 
 // part 1 - the name
@@ -53,3 +55,13 @@ int walkingMins = Convert.ToInt16(walkingTime / secondsPerMin);
 int walkingSecs = Convert.ToInt16(walkingTime % secondsPerMin);
 
 System.Console.WriteLine($"Walk Time: {walkingMins} Minute(s) & {walkingSecs} Seconds.");
+
+// part four - student ID
+
+const int checkdigit = 9;
+
+int check = studentID % checkdigit;
+string studentIDcheck = studentID + "-" + check;
+
+
+
